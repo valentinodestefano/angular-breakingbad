@@ -1,0 +1,19 @@
+  <div class="container">
+    <div class="row">
+        <div *ngFor="let character of characters" class="card" style="width: 18rem; margin-left: auto;">
+            <img src={{character.img}} class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{character.name}}</h5>
+              <p class="card-text">{{character.nickname}}</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Birthday: {{character.birthday}}</li>
+              <li class="list-group-item">{{character.portrayed}}</li>
+              <li ng-repeat="ocuppation in characters" class="list-group-item">{{character.occupation}}</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">More details...</a>
+            </div>
+          </div>
+    </div>
+  </div>

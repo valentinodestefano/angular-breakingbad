@@ -1,0 +1,10 @@
+<div class="list-group">
+    <a *ngFor="let episodie of episodies" href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">{{episodie.title}}</h5>
+        <small>Season: {{episodie.season}} Episodie: {{episodie.episode}}</small>
+      </div>
+      <p class="mb-1">Characters: {{episodie.characters}}</p>
+      <small>{{episodie.air_date}}</small>
+    </a>
+  </div>

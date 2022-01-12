@@ -12,7 +12,7 @@
               <li ng-repeat="ocuppation in characters" class="list-group-item">{{character.occupation}}</li>
             </ul>
             <div class="card-body">
-              <a href="#" class="card-link">More details...</a>
+              <button type="button" rou class="btn btn-dark" [routerLink]="['/character', character.char_id]">More details...</button>
             </div>
           </div>
     </div>

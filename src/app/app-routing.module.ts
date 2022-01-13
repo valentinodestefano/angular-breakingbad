@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { CharactersListComponent } from './components/characters-list/characters-list.component';
 import { CharacterSpecificComponent } from './components/character-specific/character-specific.component';
 import { EpisodiesListComponent } from './components/episodies-list/episodies-list.component';
+import { HomeComponentComponent } from './components/home-component/home-component.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: 'episodies',
     component: EpisodiesListComponent
+  },
+  {
+    path: '',
+    component: HomeComponentComponent
   }
 ];
 

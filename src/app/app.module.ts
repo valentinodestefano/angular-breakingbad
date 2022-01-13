@@ -8,6 +8,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { CharactersListComponent } from './components/characters-list/characters-list.component';
 import { CharacterSpecificComponent } from './components/character-specific/character-specific.component';
 import { EpisodiesListComponent } from './components/episodies-list/episodies-list.component';
+import { HomeComponentComponent } from './components/home-component/home-component.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { EpisodiesListComponent } from './components/episodies-list/episodies-li
     NavbarComponent,
     CharactersListComponent,
     CharacterSpecificComponent,
-    EpisodiesListComponent
+    EpisodiesListComponent,
+    HomeComponentComponent
   ],
   imports: [
     BrowserModule,

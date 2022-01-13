@@ -20,4 +20,8 @@ export class CharactersService {
   getCharacter(char_id: number): Observable<Character[]>{
     return this.http.get<Character[]>(`${this.BASE_URL}/api/characters/${char_id}`);
   }
+  
+  getCharacterCarousel(): Observable<Character[]>{
+    return this.http.get<Character[]>(`${this.BASE_URL}/api/characters?limit=1&offset=0`);
+  }
 }

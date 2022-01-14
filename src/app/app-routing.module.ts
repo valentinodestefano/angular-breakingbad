@@ -5,6 +5,7 @@ import { CharactersListComponent } from './components/characters-list/characters
 import { CharacterSpecificComponent } from './components/character-specific/character-specific.component';
 import { EpisodiesListComponent } from './components/episodies-list/episodies-list.component';
 import { HomeComponentComponent } from './components/home-component/home-component.component';
+import { AboutComponent } from './components/about/about.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: '',
     component: HomeComponentComponent
+  },
+  {
+    path: 'about',
+    component: AboutComponent
   }
 ];
 
